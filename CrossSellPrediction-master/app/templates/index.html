@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Mostra o conjunto de caracteres usado para escrever o site.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!--Garante que a página tem a proporção de 1:1 em qualquer tamanho de visualização.-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Form</title>
+
+</head>
+<body >
+
+<!--Header-->
+<div id="header">
+    <div class="container"> <!-- Coloca a navegação dentro de um container para o objeto barra de navegação ocupar o centro do contrainer e nao o espaço todo-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="contairer-fluid">
+
+                <a class="navbar-brand" href="#">
+                  <img src="/images/favicon.png" class="img-fluid" alt="vish"/> 
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          </nav>
+    </div>
+</div>
+<!--Header-->
+
+<h1> Housing Price Classifier</h1>
+
+<form method="POST", action="{{url_for('predict')}}"> <!-- required faz com que o campo seja obrigatório-->
+     <!-- input faz uma caixa do tipo especificado para digitação-->
+<div>
+    <label>Longitude</label>
+    <input type="number" name="longitude" step="0.0001" required>
+</div>
+<div>
+    <label>Latitude</label>
+    <input type="number" name="latitude" step="0.0001" required>
+</div>
+    <div>
+    <label>Housing Median Age</label>
+    <input type="number" name="hma" step="0.0001" required>
+</div>
+    <div>
+    <label>Total Rooms</label>
+    <input type="number" name="totalR" step="0.0001" required>
+</div>
+    <div>
+    <label>Total Bedrooms</label>
+    <input type="number" name="totalB" step="0.0001" required>
+</div>
+    <div>
+    <label>Population</label>
+    <input type="number" name="population" step="0.0001" required>
+</div>
+    <div>
+    <label>Households</label>
+    <input type="number" name="households" step="0.0001" required>
+</div>
+    <div>
+    <label>Median Income</label>
+    <input type="number" name="medianI" step="0.0001" required>
+</div>
+    <div>
+    <label>Median House Value</label>
+    <input type="number" name="mhv" step="0.0001" required>
+</div>
+    <div>
+    <label>Ocean Proximity</label>
+    <input type="number" name="ocean_p" step="0.0001" required>
+</div>
+    <div>
+    <label>Status Age</label>
+    <input type="number" name="status_age" step="0.0001" required>
+</div>
+
+    <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Submit</a>
+
+</form>
+
+<br>
+   <br>
+
+<h1>
+    <!--  {{ prediction_text }}  -->
+</h1>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
