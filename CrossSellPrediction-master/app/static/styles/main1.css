@@ -1,0 +1,96 @@
+:root {
+
+    /* --nomeVariavelCriada: valor;
+        Definindo apenas algumas cores que serao utilizadas em Hexadecimal*/
+
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+
+    /* tamanho da fonte padrao: 16px - 100% - 1rem */
+    font-size: 120%; /* controle das medidas rem. Começa nos 60% pelo Mobile First
+    
+    */
+    
+}
+
+*{
+    /*limpando todo tipo de margin e padding do html*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{ /*boa pratica*/
+
+    height: 200vh; /*viewport height, divide em pedaços a visualização e ocupa tudo*/
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+textarea{
+    font: Poppins;
+}
+
+h1, h2, h5, h6, label{
+    
+    
+    display: flex;
+    align-items: center;
+    font: Poppins;
+    color: white;
+    
+}
+
+button{
+    color: white;
+    border-color: white;
+    
+}
+
+@media (max-width:991.98px){
+
+    #header .navbar-collapse{
+        width: 100%;
+    }
+}
+
+@media (min-width:992px){
+
+    #header .nav-link{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 767.98px){
+
+    #sliderS .col .h6{
+        margin-top: 30px;
+    }
+}
+
+
+
+
