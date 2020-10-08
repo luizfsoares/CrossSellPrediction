@@ -33,8 +33,9 @@
 
 
 .myBackground{
-    
-    background: url("/images/images/bd1ce7affe56523e0bdbf9cda88f99ef\ \(1\).jpg"); width:100%; height: 100vh;
+    background: rgb(73,51,214);
+    background: radial-gradient(circle, rgba(73,51,214,1) 7%, rgba(148,187,233,1) 80%);
+    background-color: blue;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -49,8 +50,8 @@
 
 .area-form{
 
-    /*
-    background-color: rgba(0, 119, 255, 0.774);*/
+
+    background-color: black;
     height: 1210px;
     width: 700px;
     padding: 50px 60px;
@@ -106,5 +107,20 @@
     height: 100%;
     width: 100%;
   }
-  
+
+.centralizarImagem {
+    display:flex;
+    display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
+    justify-content: center;
+    align-items: center;
+}
+
+#page-landing{
+    width: auto;
+    height: auto;
+}
+
+.ajeitarLado{
+    margin-left: 170px
+}
 
