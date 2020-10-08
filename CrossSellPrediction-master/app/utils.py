@@ -1,12 +1,12 @@
 import pandas as pd
 import numpy as np
-import pickle
+#import pickle
 import scipy.stats as stats
 
-path = 'C:/Users/preda/Downloads/CrossSellPrediction-master/CrossSellPrediction-master/app/model1.pkl'
+# path = '/app/model1.pkl'
 
-with open(path, 'rb') as file_:
-    model = pickle.load(file_)
+# with open(path, 'rb') as file_:
+#    model = pickle.load(file_)
 
 
 def preprocess(data):
@@ -40,6 +40,7 @@ def predict(final_features):
 
     final_features = stats.zscore(
         final_features.values.astype(np.double), axis=1)
-    prediction = model.predict(final_features)[0]
+    # prediction = model.predict(final_features)[0]
+    prediction = "Modelo em Construção"
 
     return prediction
