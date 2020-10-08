@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Mostra o conjunto de caracteres usado para escrever o site.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!--Garante que a página tem a proporção de 1:1 em qualquer tamanho de visualização.-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/styles/main1.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/styles/partials/page-landing1.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>Form</title>
+
+
+</head>
+<body id="page-landing">
+
+<!--Header-->
+<div id="header" class="myZoom">
+  <div class="container mb-4"> <!-- Coloca a navegação dentro de um container para o objeto barra de navegação ocupar o centro do contrainer e nao o espaço todo-->
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+              <a class="navbar-brand" href="#">
+                  <img src="{{url_for('static', filename = '/styles/images/icons/tail.jpg')}}" alt="nao foiii" class="img-fluid" height="105" width="105">
+              </a>
+              <!--botao que vai abrir o menu quanto tiver no repsonsivo. Botao so aparece no breakpoint da classe navbar-expad-lg-->
+              <button class="navbar-toggler navButton navbar-btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> 
+              <div class="collapse navbar-collapse navBarMargin" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/">Página Inicial <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/sobre">Sobre Nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contato">Contato</a>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+  </div>
+</div>
+<!--Header-->
+
+
+
+<!--SLIDER-->
+
+<div id="sliderS">
+
+  <div class="container">
+    
+    <div class="myTitleS"><br>
+      <h1><b>SOBRE</b></h1>
+      <br><br><br><br><br><br>
+      <br><br><br><br><br>
+    </div>
+
+    <div class="row">
+      
+
+      <div class="col-md-5">
+        <img src="{{url_for('static', filename = '/styles/images/tail2.png')}}" class="img-fluid" width="100%" height="100%">
+      </div>
+      <div class="col-md-7">
+        <h5>A TAIL (Technology and Artificial Intelligence League) é a primeira Liga Acadêmica de Inteligência Artificial da Paraíba e a primeira Liga Acadêmica 
+          do Centro de Informática (CI). Fundada no dia 7 de agosto de 2020, a TAIL é estruturada para o desenvolvimento profissional e pessoal dos integrantes. 
+          Temos como objetivo promover um ambiente para troca de conhecimentos em áreas como inteligência artificial, ciência de dados, cálculo e estatística, 
+          bem como estimular e divulgar estudos científicos, publicações e cursos. Nosso corpo de membros é composto por professores doutores, mestrandos e 
+          alunos de graduação.</h5>
+
+      </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="myTitleS"><br>
+      <h2><b>DEPARTAMENTOS</b></h2>
+      <br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div class="row">
+
+      <div class="col-md-4">
+        
+        <img src="{{url_for('static', filename = '/styles/images/ia.jpg')}}" class="img-fluid" width="auto" height="100%">
+      </div>
+      <div class="col-md-8">
+
+        <h6>O setor de inteligência artificial ficará em cargo da promoção de conhecimento sobre os fundamentos da área, bem como o funcionamento e 
+            a implementação de diversos métodos, como exemplo, as tão faladas redes neurais artificiais. <br> <br>
+
+          Alguns exemplos de atividades a serem desenvolvidas pelo setor são: <br>
+          – Disponibilização de aulas sobre o tema; <br>
+          – Produção de conteúdo para redes sociais;<br>
+          – Recomendação de cursos;<br>
+          – Grupos de estudo.</h6>
+      </div>
+
+    </div>
+
+    <br><br><br><br><br>
+    <div class="row">
+
+      <div class="col-md-4">
+        
+        <img src="{{url_for('static', filename = '/styles/images/mat.jpg')}}" class="img-fluid" width="auto" height="100%">
+      </div>
+      <div class="col-md-8">
+
+        <h6>O setor consistirá em desenvolver, aprimorar e aprender conhecimentos matemáticos e estatísticos envolvendo o mundo da inteligência artificial 
+            e seus ramos de conhecimento. Alguns assuntos a serem abordados serão cálculo, algebra linear, estatística e proabilidade. <br> <br>
+
+          Alguns exemplos de atividades a serem desenvolvidas pelo setor são: <br>
+          – Criação de conteúdo relacionado à área; <br>
+          – Disponibilização de materiais, conceitos matemáticos e estatísticos importantes para o mundo da inteligência Artificial; <br>
+          – Disponibilização de listas com exercícios sobre as áreas de matemática e estatística; <br>
+          – Estudos individuais sobre assuntos da área.</h6>
+      </div>
+
+    </div>
+
+    <br><br><br><br><br>
+    <div class="row">
+
+      <div class="col-md-4">
+        
+        <img src="{{url_for('static', filename = '/styles/images/data.jpg')}}" class="img-fluid" width="auto" height="100%">
+      </div>
+      <div class="col-md-8">
+
+        <h6>O setor de inteligência artificial ficará em cargo da promoção de conhecimento sobre os fundamentos da área, bem como o funcionamento 
+            e a implementação de diversos métodos, como exemplo, as tão faladas redes neurais artificiais. <br> <br>
+
+          Alguns exemplos de atividades a serem desenvolvidas pelo setor são: <br>
+          – Disponibilização de aulas sobre o tema; <br>
+          – Produção de conteúdo para redes sociais; <br>
+          – Recomendação de cursos; <br>
+          – Grupos de estudo.</h6>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+<br><br><br><br><br><br><br><br>
+
+<!--SLIDER-->
+    
+
+<!--SCRIPTS-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</body>
